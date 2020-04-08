@@ -5,12 +5,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
+using IMS_Entities;
 
 namespace InventoryManagementSystem.Controllers
 {
     public class UserController : Controller
     {
-        IMSEntities1 db = new IMSEntities1();
+        IMSEntities db = new IMSEntities();
         // GET: User
         public ActionResult Index()
         {
